@@ -22,6 +22,7 @@ function Sidebar({
     <>
       <div className={`sidebar-backdrop ${open ? 'is-open' : ''}`} onClick={onClose} />
       <aside className={`sidebar ${open ? 'is-open' : ''}`} aria-label="Sidebar">
+        <div className="sidebar-inner">
         <button type="button" className="icon-btn sidebar-close" onClick={onClose} aria-label="Close menu">
           <IconClose />
         </button>
@@ -81,6 +82,7 @@ function Sidebar({
             <IconReset />
             <span>Reset demo data</span>
           </button>
+        </div>
         </div>
       </aside>
     </>
